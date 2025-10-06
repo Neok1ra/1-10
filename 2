@@ -1,0 +1,41 @@
+// Q3: Write a program to calculate the area and perimeter of a rectangle given its length and breadth.
+// Input 1: 5 10
+// Output 1: Area=50, Perimeter=30
+// Input 2: 3 7
+// Output 2: Area=21, Perimeter=20
+
+#include <stdio.h>
+
+int main() {
+    float length, breadth;
+
+    // Input length and breadth
+    scanf("%f %f", &length, &breadth);
+
+    // Calculate and display area and perimeter
+    printf("Area=%.2f, Perimeter=%.2f\n", length * breadth, 2 * (length + breadth));
+
+    return 0;
+}
+
+
+// Q4: Write a program to calculate the area and circumference of a circle given its radius.
+// Input 1: 7
+// Output 1: Area=153.94, Circumference=43.96
+// Input 2: 3
+// Output 2: Area=28.27, Circumference=18.85
+
+#include <stdio.h>
+#define PI 3.1416
+
+int main() {
+    float radius;
+
+    // Input radius
+    scanf("%f", &radius);
+
+    // Calculate and display area and circumference
+    printf("Area=%.2f, Circumference=%.2f\n", PI * radius * radius, 2 * PI * radius);
+
+    return 0;
+}
