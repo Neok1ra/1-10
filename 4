@@ -1,0 +1,49 @@
+// Q7: Write a program to swap two numbers without using a third variable.
+// Input 1: 10 20
+// Output 1: After swap: 20 10
+// Input 2: 7 14
+// Output 2: After swap: 14 7
+
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+
+    scanf("%d %d", &num1, &num2);
+
+    
+    num1 = num1 + num2;
+    num2 = num1 - num2;
+    num1 = num1 - num2;
+
+    
+    printf("After swap: %d %d\n", num1, num2);
+
+    return 0;
+}
+
+
+// Q8: Write a program to find and display the sum of the first n natural numbers.
+// Input 1: 5
+// Output 1: Sum=15
+// Input 2: 10
+// Output 2: Sum=55
+
+#include <stdio.h>
+
+int main() {
+    int n, sum = 0;
+
+    
+    scanf("%d", &n);
+
+  
+    for (int i = 1; i <= n; i++) {
+        sum += i;
+    }
+
+    
+    printf("Sum=%d\n", sum);
+
+    return 0;
+}
